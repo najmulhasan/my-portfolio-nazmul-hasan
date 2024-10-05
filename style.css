@@ -1,0 +1,482 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+
+}
+
+
+* {
+    font-family: "Roboto", sans-serif, 'Times New Roman', Times, serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+
+.nav-name {
+    margin-left: 1rem;
+    text-wrap: wrap;
+}
+
+
+.navbar {
+    position: sticky;
+    border-bottom: 1px solid black;
+    top: 0;
+    background-color: rgb(239, 235, 235);
+    background-image: linear-gradient(to right, rgb(54, 182, 221), rgb(155, 236, 41));
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-left {
+    display: flex;
+    margin-left: 1rem;
+}
+
+.logo {
+    border-radius: 50%;
+    margin: 2rem, 2rem;
+}
+
+.nav-name {
+    font-size: 14px;
+    line-height: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.nav-right {
+    margin: auto;
+}
+
+.nav-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.nav-items {
+    margin: 1rem;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    /* line-height: 1rem; */
+}
+
+.nav-link:hover {
+    color: tomato;
+}
+
+@media (max-width:873px) {
+    .navbar-container {
+        display: block;
+    }
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width:7686px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Hero Section css*/
+
+.hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.hero-image,
+.resume-image {
+    max-width: 100%;
+    height: auto;
+    margin: 0, auto;
+    display: block;
+    border-radius: 20px;
+}
+
+
+.title {
+    text-align: center;
+}
+
+.span-color {
+    color: #ec4545;
+    font-size: larger;
+    border-right: 3px solid rgb(228, 228, 240);
+    padding-right: 5px;
+}
+
+.hero-left,
+.hero-right {
+    width: 100%;
+}
+
+@media (min-width:992px) {
+
+    .hero-left {
+        width: 40%;
+    }
+
+    .hero-right {
+        width: 60%;
+    }
+}
+
+
+.description {
+    padding: 0, 1rem;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+/* Experience-resume-css */
+
+.resume-container {
+    margin-top: 1rem;
+}
+
+.resume-sub-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+
+}
+
+.sub-title {
+    font-size: 1.25rem;
+    line-height: 1.6rem;
+    margin-bottom: 0;
+}
+
+.line {
+    background-color: gray;
+    width: 100px;
+    height: 2px;
+    margin: 0.25rem 0 2rem 0;
+}
+
+.inner-line {
+    background-color: limegreen;
+    width: 50px;
+    height: 2px;
+}
+
+.resume-list {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    align-items: center;
+    border-left: 1px solid gray;
+}
+
+.resume-duration-container {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.round-div {
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    background-color: #222;
+    position: absolute;
+    left: -13.5px;
+
+}
+
+.resume-duration {
+
+    background-color: black;
+    width: auto;
+    border-radius: 1.5rem;
+    margin: 1rem 0;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-align: center;
+
+
+
+}
+
+.resume-company {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.resume-designation {
+    color: #5dea33;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+
+}
+
+.experience-image {
+    border-radius: 20px;
+}
+
+/* Certifications CSS*/
+
+
+.subtitle-container>.subtitle,
+.subtitle-container>.line {
+    margin: 0, auto;
+    margin-left: 50%;
+}
+
+.certification-sub-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.certification-list {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    border: 2px solid gray;
+    border-radius: 0.357rem;
+    transition: transform 0.3s ease;
+    margin-top: 1rem;
+    min-height: 100px;
+}
+
+.certification-list:hover {
+    transform: translateY(-0.5rem);
+}
+
+.certificate-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: #444;
+    height: 3rem;
+}
+
+.certificate-name {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.certificate-organization-name,
+.certification-date,
+.certificate-link {
+    font-size: 12px;
+    line-height: 16px;
+    color: #777;
+    margin: 8px, 0;
+
+}
+
+.certificate-link {
+    text-decoration: none;
+}
+
+.certificate-link:hover {
+    text-decoration: underline;
+}
+
+.container {
+    margin-bottom: 5rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skill-item {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 5px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Experience Section*/
+.experience-section {
+    box-shadow: 10px 10px 50px greenyellow;
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+.experience-area {
+    background-image: url(pictures/exp-bg.png);
+    background-repeat: no-repeat;
+
+}
+
+#first-color {
+    border-left: 10px solid tomato;
+    border-radius: 5px;
+}
+
+#side-color {
+    border-left: 10px solid;
+    border-image: linear-gradient(blue, cyan);
+    border-image-slice: 1;
+    border-radius: 10px;
+}
+
+.bottop-section {
+    background-image: url(pictures/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.heading-color {
+    color: orangered;
+}
+
+.flexible-container {
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.half-width {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h1 {
+    font-size: 50px;
+
+}
+
+.experience-info {
+    text-align: center;
+    border-bottom: 2px solid green;
+
+
+}
+
+.span-color {
+    color: dodgerblue;
+}
+
+.paragraph {
+    text-align: justify;
+}
+
+
+
+@media (max-width:776px) {
+    .flexible-container {
+        display: inline;
+    }
+
+}
+
+/* Portfolio CSS*/
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.project-list:hover {
+    background-color: teal;
+}
+
+.project-list {
+    margin-top: 2rem;
+    border: 1px solid green;
+    border-radius: 1rem;
+}
+
+.project-image {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.project-name,
+.project-description {
+    padding-left: 1rem;
+}
+
+a {
+    padding-left: 1rem;
+}
+
+.footer-container {
+    border-top: 2px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0.75rem;
+    margin-top: 1rem;
+    margin-left: 20px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+
+.footer-link,
+.footer span {
+    color: #d5d5d5;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+.footer-para {
+    margin-top: 70px;
+}
